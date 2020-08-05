@@ -1,3 +1,6 @@
+[jumpbox]
+bastion ansible_host=control."{{ GUID }}".example.opentlc.com
+
 [load_balancers]
 frontend1 ansible_host=frontend1."{{ GUID }}".internal
 
