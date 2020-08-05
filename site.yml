@@ -1,0 +1,14 @@
+---
+
+- import_playbook: in-memory-inventory.yml
+  tags:
+    - inventory
+    - must
+
+- import_playbook: common.yml
+  tags:
+    - common
+- import_playbook: frontend_tier.yml
+- import_playbook: database_tier.yml
+- import_playbook: app_tier.yml
+# - import_playbook: playbooks/smoketest.yml
